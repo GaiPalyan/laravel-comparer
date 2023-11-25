@@ -1,0 +1,50 @@
+{
+    "name": "gai/laravel-comparer",
+    "description": "A laravel package for comparing two files .json .yml formats",
+    "type": "project",
+    "license": "MIT",
+    "homepage": "https://github.com/GaiPalyan/laravel-comparer",
+    "authors": [
+        {
+            "name": "Gai Palyan",
+            "email": "chadReed020788@yandex.ru",
+            "homepage": "https://github.com/GaiPalyan"
+        }
+    ],
+    "keywords": [
+        "Laravel",
+        "Comparer"
+    ],
+    "require": {
+        "php": "^8.2",
+        "symfony/yaml": "^6.3"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "mockery/mockery": "^1.6",
+        "phpunit/phpunit": "^10.4",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gai\\Comparer\\": "src/",
+            "Gai\\Comparer\\Tests\\": "tests"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gai\\Comparer\\ComparerServiceProvider"
+            ],
+            "aliases": {
+                "Comparer": "Gai\\Comparer\\Facades\\Comparer"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
