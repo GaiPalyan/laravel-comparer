@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests;
+namespace Gai\Comparer\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 
